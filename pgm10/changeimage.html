@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <title>Img-Txt Hover</title>
+    <style type="text/css">
+    h1{
+    color:red;
+    }
+    img{
+    width: 600px;
+    height: 400px;
+   }
+#txt2{
+    display:none;
+}
+</style>
+</head>
+<body>
+    <center>
+    <div id="main">
+        <div id="image-text">
+            <img src="/home/ubuntu/Desktop/swedhaps/pgm10/apple.jpg" id="img1">
+        </div>
+        <div id="head">
+            <h1 id="txt1;">This is a apple</h1>
+            <h2 id="txt2">This is a orange</h2>
+        </div>
+    </div>
+    </center>
+
+        <script type="text/javascript">
+            document.getElementById('main').addEventListener("mouseover",change1)
+            document.getElementById('main').addEventListener("mouseout",change2)
+
+            function change1(){
+                document.getElementById('img1').src="/home/ubuntu/Desktop/swedhaps/pgm10/orange.jpg"
+                document.getElementById('txt1').style.display="none" 
+                document.getElementById('txt2').style.display="block" 
+            }
+
+            function change2(){
+                document.getElementById('img1').src="/home/ubuntu/Desktop/swedhaps/pgm10/apple.jpg"
+                document.getElementById('txt1').style.display="block"
+                document.getElementById('txt2').style.display="none"
+            }
+
+        </script>
+
+</body>
+</html>
+
